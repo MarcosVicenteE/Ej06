@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		96822BDE1B0F9CE4001D5EE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96822BDD1B0F9CE4001D5EE8 /* main.m */; };
+		96822BE71B0F9D2D001D5EE8 /* Mensaje.m in Sources */ = {isa = PBXBuildFile; fileRef = 96822BE61B0F9D2D001D5EE8 /* Mensaje.m */; };
+		96822BEA1B0F9E86001D5EE8 /* Contacto.m in Sources */ = {isa = PBXBuildFile; fileRef = 96822BE91B0F9E86001D5EE8 /* Contacto.m */; };
+		96822BF41B0FA785001D5EE8 /* NegocioContactoSinMensaxes.m in Sources */ = {isa = PBXBuildFile; fileRef = 96822BF31B0FA785001D5EE8 /* NegocioContactoSinMensaxes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,15 @@
 /* Begin PBXFileReference section */
 		96822BDA1B0F9CE4001D5EE8 /* Ej06 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Ej06; sourceTree = BUILT_PRODUCTS_DIR; };
 		96822BDD1B0F9CE4001D5EE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96822BE51B0F9D2D001D5EE8 /* Mensaje.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mensaje.h; path = Modelos/Mensaje.h; sourceTree = "<group>"; };
+		96822BE61B0F9D2D001D5EE8 /* Mensaje.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mensaje.m; path = Modelos/Mensaje.m; sourceTree = "<group>"; };
+		96822BE81B0F9E86001D5EE8 /* Contacto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contacto.h; path = Modelos/Contacto.h; sourceTree = "<group>"; };
+		96822BE91B0F9E86001D5EE8 /* Contacto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contacto.m; path = Modelos/Contacto.m; sourceTree = "<group>"; };
+		96822BEC1B0F9F6D001D5EE8 /* ContactoDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactoDAO.h; path = Modelos/Protocolos/ContactoDAO.h; sourceTree = "<group>"; };
+		96822BED1B0FA01A001D5EE8 /* GestionMensaje.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GestionMensaje.h; path = Modelos/Protocolos/GestionMensaje.h; sourceTree = "<group>"; };
+		96822BEE1B0FA02E001D5EE8 /* NegocioContacto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NegocioContacto.h; path = Modelos/Protocolos/NegocioContacto.h; sourceTree = "<group>"; };
+		96822BF21B0FA785001D5EE8 /* NegocioContactoSinMensaxes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NegocioContactoSinMensaxes.h; path = Modelos/NegocioContactoSinMensaxes.h; sourceTree = "<group>"; };
+		96822BF31B0FA785001D5EE8 /* NegocioContactoSinMensaxes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NegocioContactoSinMensaxes.m; path = Modelos/NegocioContactoSinMensaxes.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,34 @@
 		96822BDC1B0F9CE4001D5EE8 /* Ej06 */ = {
 			isa = PBXGroup;
 			children = (
+				96822BE41B0F9CF2001D5EE8 /* Modelos */,
 				96822BDD1B0F9CE4001D5EE8 /* main.m */,
 			);
 			path = Ej06;
+			sourceTree = "<group>";
+		};
+		96822BE41B0F9CF2001D5EE8 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				96822BE51B0F9D2D001D5EE8 /* Mensaje.h */,
+				96822BE61B0F9D2D001D5EE8 /* Mensaje.m */,
+				96822BE81B0F9E86001D5EE8 /* Contacto.h */,
+				96822BE91B0F9E86001D5EE8 /* Contacto.m */,
+				96822BEB1B0F9F01001D5EE8 /* Protocolos */,
+				96822BF21B0FA785001D5EE8 /* NegocioContactoSinMensaxes.h */,
+				96822BF31B0FA785001D5EE8 /* NegocioContactoSinMensaxes.m */,
+			);
+			name = Modelos;
+			sourceTree = "<group>";
+		};
+		96822BEB1B0F9F01001D5EE8 /* Protocolos */ = {
+			isa = PBXGroup;
+			children = (
+				96822BEC1B0F9F6D001D5EE8 /* ContactoDAO.h */,
+				96822BED1B0FA01A001D5EE8 /* GestionMensaje.h */,
+				96822BEE1B0FA02E001D5EE8 /* NegocioContacto.h */,
+			);
+			name = Protocolos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96822BF41B0FA785001D5EE8 /* NegocioContactoSinMensaxes.m in Sources */,
+				96822BEA1B0F9E86001D5EE8 /* Contacto.m in Sources */,
 				96822BDE1B0F9CE4001D5EE8 /* main.m in Sources */,
+				96822BE71B0F9D2D001D5EE8 /* Mensaje.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
